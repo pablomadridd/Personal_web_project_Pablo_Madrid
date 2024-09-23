@@ -1,95 +1,99 @@
-/* Global Styles */
+/* Estilos generales */
 body {
-    font-family: 'Verdana', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f; /* Fondo negro */
+    color: #ffffff;
 }
 
+/* Navegación común */
 nav {
-    background-color: #2d2d2d;
-    padding: 1rem 0;
+    background-color: #2b2b39;
+    padding: 1rem;
     text-align: center;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: #3498db; /* Azul */
+    font-size: 1.2rem;
 }
 
 nav ul li a:hover {
-    color: #f4f4f4;
-    text-decoration: underline;
+    color: #5dade2;
 }
 
+/* Footer común */
+footer {
+    background-color: #2b2b39;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 0;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #5dade2;
+}
+
+/* Encabezado común */
 header {
-    background-image: url('your-image.jpg');
+    background-image: url('header-background.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    padding: 5rem 0;
     text-align: center;
+    color: white;
 }
 
-.header-content h1 {
+header h1 {
     font-size: 2.5rem;
     margin: 0;
 }
 
-.header-content p {
+header p {
     font-size: 1.2rem;
+    margin: 10px 0 0;
 }
 
-main {
+/* Disposición del contenido de Home */
+main.home-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
-    background-color: white;
-    margin: 1rem auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 2rem;
-    color: #2d2d2d;
-    margin-bottom: 1rem;
-}
-
-p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-
-footer {
-    background-color: #2d2d2d;
-    color: white;
+    min-height: 70vh;
     text-align: center;
-    padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
-footer a {
-    color: #f4f4f4;
-    text-decoration: none;
-    font-weight: bold;
+main.home-layout h2 {
+    color: #3498db;
 }
 
-footer a:hover {
-    text-decoration: underline;
+main.home-layout p {
+    max-width: 600px;
+    color: #d0d0e1;
 }
